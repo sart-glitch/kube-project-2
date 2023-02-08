@@ -36,6 +36,8 @@ spec:
       - image: mysql
         name: mysql
         env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: password
         - name: MYSQL_DATABASE
           value: musical_world
         - name: MYSQL_USER
