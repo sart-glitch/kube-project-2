@@ -1,8 +1,26 @@
+
 <?php
 
-	$conn = mysqli_connect('localhost','root','','musical_world');
+$host="mysql";
+$user="root";
+$pass="password";
+$db="musical_world";
 
-	if(!$conn)
-		die("Error while connecting...!").mysqli_connect_error($conn);
+$conn=mysqli_connect($host,$user,$pass,$db);
 
- ?>
+if(!$conn)
+{
+	print("Not Connected<br>".mysql_error());
+
+}
+else
+{
+	//echo("Connected");
+}
+
+
+
+
+
+
+?>
