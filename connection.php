@@ -3,10 +3,9 @@
 
 $host="mysql";
 $user="root";
-$pass="password";
 $db="musical_world";
 
-$conn=mysqli_connect($host,$user,$pass,$db);
+$conn=mysqli_connect($host,$user,$db);
 
 if(!$conn)
 {
